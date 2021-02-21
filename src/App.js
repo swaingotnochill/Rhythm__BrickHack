@@ -8,6 +8,7 @@ import {
  
 } from "react-router-dom";
 import RhythmCards from "./RhythmCards";
+import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </Route>
             <Route path="/">
             <RhythmCards />
+            <SwipeButtons />
             </Route>
           </Switch>
         </Router>

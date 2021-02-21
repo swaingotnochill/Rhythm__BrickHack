@@ -7,8 +7,8 @@ const firebaseConfig = {
     projectId: "rhythm-brickhack",
     storageBucket: "rhythm-brickhack.appspot.com",
     messagingSenderId: "129723530981",
-    appId: "1:129723530981:web:066bd2fe685a7718969e0c",
-    measurementId: "G-NB2ST2D56L"
+    appId: "1:129723530981:web:8e6450568dd04daf969e0c",
+    measurementId: "G-WBHHWKL7HC"
   };
 
   const firebaseApp = firebase.initializeApp(firebaseConfig);
