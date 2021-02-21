@@ -10,17 +10,25 @@ import {
 import RhythmCards from "./Components/RhythmCards";
 import Player from "./Components/Player";
 import SwipeButtons from "./Components/SwipeButtons";
-
+import Chats from "./Chats";
+import ChatScreen from "./ChatScreen";
 function App() {
   return (
     <div className="App">
-      <Header />
+      
         <Router>
           <Switch>
+          <Route path="/chat/:person">
+              <Header backButton="/chat" />
+             <ChatScreen />
+            </Route>
+            
             <Route path="/chat">
-              <h1>Chat Page</h1>
+              <Header backButton="/" />
+             <Chats />
             </Route>
             <Route path="/">
+            <Header /> 
             <RhythmCards />
             <SwipeButtons />
             </Route>
