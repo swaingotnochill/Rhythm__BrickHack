@@ -7,8 +7,9 @@ import {
   Route,
  
 } from "react-router-dom";
-import RhythmCards from "./RhythmCards";
-import SwipeButtons from "./SwipeButtons";
+import RhythmCards from "./Components/RhythmCards";
+import Player from "./Components/Player";
+import SwipeButtons from "./Components/SwipeButtons";
 
 function App() {
   return (
