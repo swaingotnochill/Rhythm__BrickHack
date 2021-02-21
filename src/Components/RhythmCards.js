@@ -27,10 +27,7 @@ function RhythmCards(){
             {people.map(person => <TinderCard className="swipe" key={person.name} preventSwipe={["up", "down"]}>
                 <div style={{backgroundImage: `url(${person.img_url})`}} className="card">
                     <h3>{person.name}</h3>
-                    <div style={{
-                        justifyContent: "center",
-                        alignItems: "center"}}>
-                        <Player /></div>
+                    <Player />
                 </div>
             </TinderCard>)}
             </div>
