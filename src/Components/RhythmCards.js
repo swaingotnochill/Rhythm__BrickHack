@@ -21,14 +21,16 @@ function RhythmCards(){
     },[]);
     return(
         <div>
-        <h1>Rhythm Cards</h1>
         <div className="cardContainer">
-            
-        
+
+
             {people.map(person => <TinderCard className="swipe" key={person.name} preventSwipe={["up", "down"]}>
                 <div style={{backgroundImage: `url(${person.img_url})`}} className="card">
                     <h3>{person.name}</h3>
-                    <Player />
+                    <div style={{
+                        justifyContent: "center",
+                        alignItems: "center"}}>
+                        <Player /></div>
                 </div>
             </TinderCard>)}
             </div>
